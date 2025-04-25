@@ -1,0 +1,204 @@
+/* StoreManagerDashboard.css */
+.store-manager-dashboard {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #eef2f7, #d9e2ec);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-header h2 {
+    color: #34495e;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background: #c0392b;
+  }
+  
+  .message {
+    color: #27ae60;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .form-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .form-container h3 {
+    color: #34495e;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .form-container input {
+    padding: 8px;
+    width: 140px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-container input[type="submit"] {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: auto;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background: #219653;
+  }
+  
+  .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .inventory-table th,
+  .inventory-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .inventory-table th {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .inventory-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .inventory-table tr:hover {
+    background: #eef2f7;
+  }
+  
+  .inventory-table input {
+    padding: 6px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .inventory-table input:disabled {
+    background: #f4f4f4;
+    border: none;
+  }
+  
+  .edit,
+  .save,
+  .delete {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  
+  .edit {
+    background: #3498db;
+    color: #fff;
+  }
+  
+  .edit:hover {
+    background: #2980b9;
+  }
+  
+  .save {
+    background: #e67e22;
+    color: #fff;
+  }
+  
+  .save:hover {
+    background: #d35400;
+  }
+  
+  .delete {
+    background: #e74c3c;
+    color: #fff;
+  }
+  
+  .delete:hover {
+    background: #c0392b;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-header {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .form-container input {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .inventory-table th,
+    .inventory-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
