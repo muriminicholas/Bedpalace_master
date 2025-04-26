@@ -111,11 +111,18 @@ function Login() {
         </form>
         {error && <p className="error">{error}</p>}
         <div className="extra-options">
+        <div >
           <a href="/forgot-password.html">Forgot Password?</a>
-          <button onClick={() => (window.location.href = 'http://localhost:8080/bedpalacemaster/signup.html')}>
+          
+          </div>
+          <div classname="signupbutton"> <button onClick={() => (window.location.href = 'http://localhost:8080/bedpalacemaster/signup.html')}>
             Sign Up
-          </button>
+          </button></div>
+         
+         
+        
         </div>
+        
       </div>
     </div>
   );
