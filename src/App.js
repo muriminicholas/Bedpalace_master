@@ -106,6 +106,7 @@ function Login() {
             <option value="Manager">Manager</option>
             <option value="Store Manager">Store Manager</option>
             <option value="Fundi">Fundi</option>
+            <option value="sales">Sales</option>
           </select>
           <button type="submit">Login</button>
         </form>
